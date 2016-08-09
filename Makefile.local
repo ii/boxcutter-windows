@@ -1,4 +1,8 @@
 WIN2012R2_X64 = iso/en_windows_server_2012_r2_with_update_x64_dvd_4065220.iso
 WIN2012R2_X64_CHECKSUM = af9ef225a510d6d51c5520396452d4f1c1e06935
 CM = chef
-CM_VERSION = 12.12.15
+CM_VERSION = 12.12.15-1
+BOX_VERSION = 0.1.1
+UPDATE = false
+HEADLESS = false
+GENERALIZE = false
