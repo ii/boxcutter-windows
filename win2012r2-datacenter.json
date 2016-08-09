@@ -149,7 +149,7 @@
         "UPDATE={{user `update`}}"
       ],
       "scripts": [
-        "script/mgmt_framework.ps1",
+        "script/mgmt_framework.ps1"
       ],
       "type": "powershell"
     },
