@@ -149,6 +149,7 @@
         "UPDATE={{user `update`}}"
       ],
       "scripts": [
+        "script/mgmt_framework.bat",
         "script/vagrant.bat",
         "script/cmtool.bat",
         "script/vmtool.bat",
