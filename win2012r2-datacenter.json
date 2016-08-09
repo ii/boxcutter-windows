@@ -141,7 +141,7 @@
       "vagrantfile_template": "tpl/vagrantfile-win2012r2-datacenter.tpl"
     }
   ],
-  "provisioners": [
+    "provisioners": [
     {
       "environment_vars": [
         "CM={{user `cm`}}",
@@ -149,7 +149,17 @@
         "UPDATE={{user `update`}}"
       ],
       "scripts": [
-        "script/mgmt_framework.bat",
+        "script/mgmt_framework.ps1",
+      ],
+      "type": "powershell"
+    },
+    {
+      "environment_vars": [
+        "CM={{user `cm`}}",
+        "CM_VERSION={{user `cm_version`}}",
+        "UPDATE={{user `update`}}"
+      ],
+      "scripts": [
         "script/vagrant.bat",
         "script/cmtool.bat",
         "script/vmtool.bat",
