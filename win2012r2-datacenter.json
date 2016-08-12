@@ -13,6 +13,8 @@
         "floppy/passwordchange.bat",
         "floppy/powerconfig.bat",
         "floppy/win2012r2-datacenter/Autounattend.xml",
+        "floppy/mgmt_framework.bat",
+        "floppy/y-features.bat",
         "floppy/zz-start-sshd.cmd"
       ],
       "guest_os_type": "windows8srv-64",
@@ -48,6 +50,8 @@
         "floppy/passwordchange.bat",
         "floppy/powerconfig.bat",
         "floppy/win2012r2-datacenter/Autounattend.xml",
+        "floppy/mgmt_framework.bat",
+        "floppy/y-features.bat",
         "floppy/zz-start-sshd.cmd"
       ],
       "guest_os_type": "Windows2012_64",
@@ -141,18 +145,7 @@
       "vagrantfile_template": "tpl/vagrantfile-win2012r2-datacenter.tpl"
     }
   ],
-    "provisioners": [
-    {
-      "environment_vars": [
-        "CM={{user `cm`}}",
-        "CM_VERSION={{user `cm_version`}}",
-        "UPDATE={{user `update`}}"
-      ],
-      "scripts": [
-        "script/mgmt_framework.ps1"
-      ],
-      "type": "powershell"
-    },
+  "provisioners": [
     {
       "environment_vars": [
         "CM={{user `cm`}}",

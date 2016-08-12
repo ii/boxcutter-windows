@@ -14,14 +14,18 @@ mkdir "%MGMT_FRAMEWORK_DIR%"
 pushd "%MGMT_FRAMEWORK_DIR%"
 
 if exist "%SystemRoot%\_download.cmd" (
+  echo ==^> Downloading "%MGMT_FRAMEWORK_URL%" to "%MGMT_FRAMEWORK_DIR%"
   call "%SystemRoot%\_download.cmd" "%MGMT_FRAMEWORK_URL%" "%MGMT_FRAMEWORK_PATH%"
 ) else (
   echo ==^> Downloading "%MGMT_FRAMEWORK_URL%" to "%MGMT_FRAMEWORK_PATH%"
   powershell -Command "(New-Object System.Net.WebClient).DownloadFile('%MGMT_FRAMEWORK_URL%', '%MGMT_FRAMEWORK_PATH%')" <NUL
 )
-if not exist "%MGMT_FRAMEWORK_PATH%" goto exit1
 
-@wusa.exe "%MGMT_FRAMEWORK_PATH%" /quiet /norestart
+echo ==^> Running wusa.exe "%MGMT_FRAMEWORK_PATH%" /quiet /norestart
+wusa.exe "%MGMT_FRAMEWORK_PATH%" /quiet /norestart
+
+REM if not exist "%MGMT_FRAMEWORK_PATH%" goto exit1
+
 
 :exit0
 
