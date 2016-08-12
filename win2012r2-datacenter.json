@@ -13,6 +13,8 @@
         "floppy/passwordchange.bat",
         "floppy/powerconfig.bat",
         "floppy/win2012r2-datacenter/Autounattend.xml",
+        "floppy/mgmt_framework.bat",
+        "floppy/y-features.bat",
         "floppy/zz-start-sshd.cmd"
       ],
       "guest_os_type": "windows8srv-64",
@@ -48,6 +50,8 @@
         "floppy/passwordchange.bat",
         "floppy/powerconfig.bat",
         "floppy/win2012r2-datacenter/Autounattend.xml",
+        "floppy/mgmt_framework.bat",
+        "floppy/y-features.bat",
         "floppy/zz-start-sshd.cmd"
       ],
       "guest_os_type": "Windows2012_64",

@@ -6,7 +6,7 @@
 
 :: Uncomment the following to echo commands as they are run
 :: Default: (unset)
-:: set PACKER_DEBUG=1
+set PACKER_DEBUG=1
 
 :: Uncomment the following to define the directory where scripts/save-logs.cmd
 :: will save the installation logs
@@ -21,12 +21,12 @@
 :: Uncomment the following to pause PACKER_PAUSE seconds after each script is
 :: run by floppy/00-run-all-scripts.cmd (unless you press Y)
 :: Default: (unset)
-:: set PACKER_PAUSE=60
+set PACKER_PAUSE=120
 
 :: Uncomment the following to pause if a script run by
 :: floppy/00-run-all-scripts.cmd returns a non-zero exit value
 :: Default: (unset)
-:: set PACKER_PAUSE_ON_ERROR=1
+set PACKER_PAUSE_ON_ERROR=1
 
 :: Uncomment the following to shutdown if a script run by
 :: floppy/00-run-all-scripts.cmd returns a non-zero exit value
